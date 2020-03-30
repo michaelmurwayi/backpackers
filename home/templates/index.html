@@ -1,0 +1,645 @@
+{% load staticfiles%}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="{% static 'css/mdb.min.css' %}" />
+  <!-- custom styles (optional) -->
+  <link rel="stylesheet" href="{%static 'css/style.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
+
+</head>
+<style>
+  .intro-2 {
+    background: url("https://mdbootstrap.com/img/Photos/Others/img (51).jpg")no-repeat center center;
+    background-size: cover;
+  }
+
+  .view {
+    margin-top: -56px;
+  }
+
+  .navbar {
+    z-index: 1;
+  }
+
+  html,
+  body,
+  header,
+  .view {
+    height: 100%;
+  }
+</style>
+
+<body>
+  <html lang="en" class="full-height">
+
+  <!--Main Navigation-->
+  <html lang="en" class="full-height">
+
+  <!--Main Navigation-->
+  <!--Main Navigation-->
+  <header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark black">
+      <div class="container">
+        <a class="navbar-brand" href="#"><strong>Navbar</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profile</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="view intro-2">
+      <div class="full-bg-img">
+        <div class="mask rgba-black-strong flex-center">
+          <div class="container">
+            <div class="white-text text-center wow fadeInUp">
+              <h2>Made For Backpackers, By Backpackers</h2>
+              <h5>Comfort, Adventure and Fun</h5>
+              <br>
+              <p>Just Sign up and enjoy variety of services.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+  <!--Main Navigation-->
+  <!--Mask-->
+  <div class="view hm-black-strong">
+    <div class="full-bg-img flex-center">
+      <div class="container">
+        <div class="row" id="home">
+
+          <!--First column-->
+          <div class="col-lg-6">
+            <div class="description">
+              <h2 class="h2-responsive wow fadeInLeft">Make youself at home </h2>
+              <hr class="hr-dark">
+              <p class="wow fadeInLeft" data-wow-delay="0.4s">Enjoy our vast connection of rental spaces available to
+                all out backpackers in Kenya.Our locations are distributed along the beautiful land of kenya to provide
+                temporary Living Space for all backpackers out there.Its Easy Just Sign Up (for new users ) or Sign In
+                (for alredy registered customers ) to enjoy our range of services </p>
+              <br>
+              <a class="btn btn-warning btn-lg wow fadeInLeft" data-wow-delay="0.7s" href="{% url 'signup' %}">Sign
+                Up</a>
+              <a class="btn btn-success btn-lg wow fadeInLeft" data-wow-delay="0.7s" href="{% url 'login' %}">Sign In
+              </a>
+
+            </div>
+          </div>
+          <!--/.First column-->
+
+          <!--Second column-->
+          <div class=" col-lg-4 offset-lg-1 flex-center">
+            <!--Form-->
+            <img src="{% static '/img/intro.jpeg' %}" alt="" class="img-fluid wow fadeInRight" id="app-mockup">
+            <!--/.Form-->
+          </div>
+          <!--/Second column-->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/.Mask-->
+
+  <!-- Section: Features v.1 -->
+  <section class="text-center my-5">
+
+    <!-- Section heading -->
+    <h2 class="h1-responsive font-weight-bold my-5">Why are we so great?</h2>
+    <!-- Section description -->
+    <p class="lead grey-text w-responsive mx-auto mb-5">We are a customer driven organization and all our effort are
+      put
+      into ensuring all our clients and hosts recieve the best all round service we can offer from any location in the
+      contry.We ensure;</p>
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-4">
+
+        <i class="fas fa-dollar-sign  fa-3x green-text"></i>
+        <h5 class="font-weight-bold my-4">Affordability</h5>
+        <p class="grey-text mb-md-0 mb-5">Our price are very user friendly to ensure everyone can access the services
+          without compromising both the clients and the hosts.
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4">
+
+        <i class="fas fa-couch fa-3x cyan-text"></i>
+        <h5 class="font-weight-bold my-4">Comfort</h5>
+        <p class="grey-text mb-md-0 mb-5">All available guest rooms are of standard quality and well maintained to
+          provide umple relaxation
+          to all our guest .
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4">
+
+        <i class="far fa-headset fa-3x orange-text"></i>
+        <h5 class="font-weight-bold my-4">Support</h5>
+        <p class="grey-text mb-0">We offer round the clock support for inquiries through our 24/7 customer relations
+          team.Complains and Compliments are all highly welcomed
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </section>
+  <!-- Section: Features v.1 -->
+
+  <hr class="my-5">
+  <h3 style="text-align: center;"> <strong> Our Gallery</strong> </h3>
+  <!-- Grid row -->
+  <div class="row">
+    <!-- Grid column -->
+    <div class="col-lg-4 col-md-12 mb-4">
+
+      <!--Modal: Name-->
+      <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+
+          <!--Content-->
+          <div class="modal-content">
+
+            <!--Body-->
+            <div class="modal-body mb-0 p-0">
+
+              <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/A3PDXmYoF5U"
+                  allowfullscreen></iframe>
+              </div>
+
+            </div>
+
+            <!--Footer-->
+            <div class="modal-footer justify-content-center">
+              <span class="mr-4">Spread the word!</span>
+              <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
+              <!--Twitter-->
+              <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
+              <!--Google +-->
+              <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>
+              <!--Linkedin-->
+              <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
+
+              <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                data-dismiss="modal">Close</button>
+
+            </div>
+
+          </div>
+          <!--/.Content-->
+
+        </div>
+      </div>
+      <!--Modal: Name-->
+
+      <a><img class="img-fluid z-depth-1" src="https://mdbootstrap.com/img/screens/yt/screen-video-1.jpg" alt="video"
+          data-toggle="modal" data-target="#modal1"></a>
+
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-lg-4 col-md-6 mb-4">
+
+      <!--Modal: Name-->
+      <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+
+          <!--Content-->
+          <div class="modal-content">
+
+            <!--Body-->
+            <div class="modal-body mb-0 p-0">
+
+              <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wTcNtgA6gHs"
+                  allowfullscreen></iframe>
+              </div>
+
+            </div>
+
+            <!--Footer-->
+            <div class="modal-footer justify-content-center">
+              <span class="mr-4">Spread the word!</span>
+              <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
+              <!--Twitter-->
+              <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
+              <!--Google +-->
+              <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>
+              <!--Linkedin-->
+              <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
+
+              <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                data-dismiss="modal">Close</button>
+
+            </div>
+
+          </div>
+          <!--/.Content-->
+
+        </div>
+      </div>
+      <!--Modal: Name-->
+
+      <a><img class="img-fluid z-depth-1" src="https://mdbootstrap.com/img/screens/yt/screen-video-2.jpg" alt="video"
+          data-toggle="modal" data-target="#modal6"></a>
+
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-lg-4 col-md-6 mb-4">
+
+      <!--Modal: Name-->
+      <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+
+          <!--Content-->
+          <div class="modal-content">
+
+            <!--Body-->
+            <div class="modal-body mb-0 p-0">
+
+              <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vlDzYIIOYmM"
+                  allowfullscreen></iframe>
+              </div>
+
+            </div>
+
+            <!--Footer-->
+            <div class="modal-footer justify-content-center">
+              <span class="mr-4">Spread the word!</span>
+              <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
+              <!--Twitter-->
+              <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
+              <!--Google +-->
+              <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>
+              <!--Linkedin-->
+              <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
+
+              <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                data-dismiss="modal">Close</button>
+
+            </div>
+
+          </div>
+          <!--/.Content-->
+
+        </div>
+      </div>
+      <!--Modal: Name-->
+
+      <a><img class="img-fluid z-depth-1" src="https://mdbootstrap.com/img/screens/yt/screen-video-3.jpg" alt="video"
+          data-toggle="modal" data-target="#modal4"></a>
+
+    </div>
+    <!-- Grid column -->
+
+  </div>
+  <!-- Grid row -->
+
+  <!-- Grid row -->
+  <div class="row">
+
+    <!-- Grid column -->
+    <div class="col-lg-4 col-md-12 mb-4">
+
+      <!--Modal: Name-->
+      <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+
+          <!--Content-->
+          <div class="modal-content">
+
+            <!--Body-->
+            <div class="modal-body mb-0 p-0">
+
+              <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GUEZCxBcM78"
+                  allowfullscreen></iframe>
+              </div>
+
+            </div>
+
+            <!--Footer-->
+            <div class="modal-footer justify-content-center">
+              <span class="mr-4">Spread the word!</span>
+              <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
+              <!--Twitter-->
+              <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
+              <!--Google +-->
+              <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>
+              <!--Linkedin-->
+              <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
+
+              <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                data-dismiss="modal">Close</button>
+
+            </div>
+
+          </div>
+          <!--/.Content-->
+
+        </div>
+      </div>
+      <!--Modal: Name-->
+
+      <a><img class="img-fluid z-depth-1" src="https://mdbootstrap.com/img/screens/yt/screen-video-4.jpg" alt="video"
+          data-toggle="modal" data-target="#modal2"></a>
+
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-lg-4 col-md-6 mb-4">
+
+      <!--Modal: Name-->
+      <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+
+          <!--Content-->
+          <div class="modal-content">
+
+            <!--Body-->
+            <div class="modal-body mb-0 p-0">
+
+              <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/PjGkVCAo8Fw"
+                  allowfullscreen></iframe>
+              </div>
+
+            </div>
+
+            <!--Footer-->
+            <div class="modal-footer justify-content-center">
+              <span class="mr-4">Spread the word!</span>
+              <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
+              <!--Twitter-->
+              <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
+              <!--Google +-->
+              <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>
+              <!--Linkedin-->
+              <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
+
+              <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                data-dismiss="modal">Close</button>
+
+            </div>
+
+          </div>
+          <!--/.Content-->
+
+        </div>
+      </div>
+      <!--Modal: Name-->
+
+      <a><img class="img-fluid z-depth-1" src="https://mdbootstrap.com/img/screens/yt/screen-video-5.jpg" alt="video"
+          data-toggle="modal" data-target="#modal5"></a>
+
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-lg-4 col-md-6 mb-4">
+
+      <!--Modal: Name-->
+      <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+
+          <!--Content-->
+          <div class="modal-content">
+
+            <!--Body-->
+            <div class="modal-body mb-0 p-0">
+
+              <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/gsNY7TV4r1M"
+                  allowfullscreen></iframe>
+              </div>
+
+            </div>
+
+            <!--Footer-->
+            <div class="modal-footer d-block d-md-flex justify-content-center">
+              <span class="mr-4">Spread the word!</span>
+              <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
+              <!--Twitter-->
+              <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
+              <!--Google +-->
+              <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>
+              <!--Linkedin-->
+              <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
+
+              <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                data-dismiss="modal">Close</button>
+
+            </div>
+
+          </div>
+          <!--/.Content-->
+
+        </div>
+      </div>
+      <!--Modal: Name-->
+
+      <a><img class="img-fluid z-depth-1" src="https://mdbootstrap.com/img/screens/yt/screen-video-6.jpg" alt="video"
+          data-toggle="modal" data-target="#modal3"></a>
+
+    </div>
+    <!-- Grid column -->
+
+  </div>
+  <!-- Grid row -->
+
+  <!--Section: Contact v.2-->
+  <section class="mb-4">
+
+    <!--Section heading-->
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+    <!--Section description-->
+    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us
+      directly. Our team will come back to you within
+      a matter of hours to help you.</p>
+
+    <div class="row">
+
+      <!--Grid column-->
+      <div class="col-md-9 mb-md-0 mb-5">
+        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+          <!--Grid row-->
+          <div class="row">
+
+            <!--Grid column-->
+            <div class="col-md-6">
+              <div class="md-form mb-0">
+                <input type="text" id="name" name="name" class="form-control">
+                <label for="name" class="">Your name</label>
+              </div>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-6">
+              <div class="md-form mb-0">
+                <input type="text" id="email" name="email" class="form-control">
+                <label for="email" class="">Your email</label>
+              </div>
+            </div>
+            <!--Grid column-->
+
+          </div>
+          <!--Grid row-->
+
+          <!--Grid row-->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="md-form mb-0">
+                <input type="text" id="subject" name="subject" class="form-control">
+                <label for="subject" class="">Subject</label>
+              </div>
+            </div>
+          </div>
+          <!--Grid row-->
+
+          <!--Grid row-->
+          <div class="row">
+
+            <!--Grid column-->
+            <div class="col-md-12">
+
+              <div class="md-form">
+                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                <label for="message">Your message</label>
+              </div>
+
+            </div>
+          </div>
+          <!--Grid row-->
+
+        </form>
+
+        <div class="text-center text-md-left">
+          <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+        </div>
+        <div class="status"></div>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-md-3 text-center">
+        <ul class="list-unstyled mb-0">
+          <li><i class="fas fa-map-marker-alt fa-2x"></i>
+            <p>San Francisco, CA 94126, USA</p>
+          </li>
+
+          <li><i class="fas fa-phone mt-4 fa-2x"></i>
+            <p>+ 01 234 567 89</p>
+          </li>
+
+          <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+            <p>contact@mdbootstrap.com</p>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+    </div>
+
+  </section>
+  <!--Section: Contact v.2-->
+  <!-- Footer -->
+  <footer class="page-footer font-small grey darken-3">
+
+    <!-- Footer Elements -->
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-12 py-5">
+          <div class="mb-5 flex-center">
+
+            <!-- Facebook -->
+            <a class="fb-ic">
+              <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic">
+              <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- Google +-->
+            <a class="gplus-ic">
+              <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Linkedin -->
+            <a class="li-ic">
+              <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic">
+              <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Pinterest-->
+            <a class="pin-ic">
+              <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+            </a>
+          </div>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+    <!-- Footer Elements -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+</body>
+
+</html>
